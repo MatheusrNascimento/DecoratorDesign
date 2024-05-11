@@ -1,4 +1,5 @@
 using DecoratorDesign.Component;
+using DecoratorDesign.Decorator;
 
 namespace DecoratorDesign.ConcreteDecorator
 {

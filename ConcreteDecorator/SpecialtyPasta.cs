@@ -3,14 +3,13 @@ using DecoratorDesign.Decorator;
 
 namespace DecoratorDesign.ConcreteDecorator
 {
-    public class StuffedBorder : Pizza
+    public class SpecialtyPasta : Pizza
     {
-        public StuffedBorder(IPizza pizza) : base(pizza){}
+        public SpecialtyPasta(IPizza pizza) : base(pizza){}
 
-        public override string Optional()
-        {
+        public override string Optional(){
             string pizza = base.Optional();
-            pizza += "\r \n Com borda recheda}";
+            pizza += "\r \n Com massa especial";
 
             return pizza;
         }
@@ -18,7 +17,7 @@ namespace DecoratorDesign.ConcreteDecorator
         public override decimal Price()
         {
             decimal price = base.Price();
-            price += 5.00M;
+            price += 6.00M;
 
             return price;
         }

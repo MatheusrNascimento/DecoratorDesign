@@ -1,6 +1,6 @@
 using DecoratorDesign.Component;
 
-namespace DecoratorDesign.ConcreteDecorator
+namespace DecoratorDesign.Decorator
 {
     public class Pizza : IPizza
     {
